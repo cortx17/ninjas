@@ -2,24 +2,27 @@ var myNinjaApp = angular.module("myNinjaApp", []);
 
 myNinjaApp.controller("NinjaController", [
    "$scope",
-   "depen",
-   function($scope, depen) {
+   function($scope) {
       $scope.ninjas = [
          {
             name: "Yoshi",
-            belt: "green"
+            belt: "green",
+            rate: 50
          },
          {
             name: "Crystal",
-            belt: "yellow"
+            belt: "yellow",
+            rate: 30
          },
          {
             name: "Ryu",
-            belt: "orange"
+            belt: "orange",
+            rate: 10
          },
          {
             name: "Shaun",
-            belt: "black"
+            belt: "black",
+            rate: 1000
          }
       ];
    }
